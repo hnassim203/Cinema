@@ -1,0 +1,9 @@
+.footer_container {
+    padding: 25px;
+    background-color: rgb(26, 23, 23);
+    color: rgb(179, 177, 177);
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid #333; 
+}

@@ -1,0 +1,23 @@
+
+:root{
+  --bg: #f8f9fb;
+  --card: #ffffff;
+  --accent: #2b6cb0;
+  --muted: #666;
+}
+
+.dash-schedule { font-family: Arial, Helvetica, sans-serif; color: #222; background: var(--bg); padding: 12px; }
+
+h1, h2 { color: var(--accent); margin: 6px 0 12px; }
+
+form { background: var(--card); padding: 10px; border-radius: 6px; display: flex; gap: 8px; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+
+select, input[type="date"], input[type="time"] { padding: 6px 8px; border: 1px solid #ddd; border-radius: 4px; }
+
+button { background: var(--accent); color: #fff; border: none; padding: 7px 10px; border-radius: 4px; cursor: pointer; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 12px; background: var(--card); border-radius: 6px; overflow: hidden; }
+th { background: #eef6ff; color: var(--accent); padding: 10px; text-align: center; }
+td { padding: 10px; border-bottom: 1px solid #f1f1f1; text-align: center; }
+
+img { border-radius: 4px; display: block; margin: 0 auto; }

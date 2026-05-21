@@ -1,0 +1,87 @@
+
+.ecron{
+    background-color: #000000;
+    color: white;
+    padding-top: 90px;
+    padding-bottom: 10%;
+    
+    min-height: 100vh;
+}
+
+
+.ecron img{
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+
+.cinema{
+    padding-top: 20px;
+}
+
+
+.seat-grid {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.seat {
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    min-width: 40px; 
+    min-height: 50px;
+    transition: background-color 0.2s; 
+}
+
+
+.seat.standard {
+    color: rgb(168, 164, 164); 
+    background-color: #2c3e50; 
+    border: 1px solid #555;
+}
+
+
+.seat.premium {
+    color: yellow; 
+    background-color: rgb(44, 44, 1); 
+}
+
+
+.seat.vip {
+    color: rebeccapurple; 
+    background-color: rgb(22, 1, 43); 
+}
+
+
+.seat.active {
+  background-color: red !important;
+  color: white !important; 
+  border: none !important;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+
+.invisible-space {
+    visibility: hidden;
+    cursor: default;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+
+.seat-label {
+    margin-top: 2px;
+}

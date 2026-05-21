@@ -1,0 +1,90 @@
+.foot{
+    border-top: 1px solid red;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.foot-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+span{
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.foot-left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.G-1{
+    color: gray;
+    border: 1px solid rgb(213, 211, 211);
+    border-radius: 2px;
+    padding: 2px;
+    background-color: rgb(0, 0, 0);
+    /* margin: auto; */
+}
+.C-1{
+    color: yellow;
+    border: 1px solid white;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: rgb(66, 66, 1);
+}
+.A-1{
+   color: blueviolet;
+    border: 1px solid white;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: rgb(46, 0, 89); 
+}
+.R-1{
+   color: rgb(78, 78, 78);
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.foot-right span{
+    color: rgb(182, 182, 182);
+}
+
+.foot-left h4{
+    color: rgb(194, 194, 194);
+}
+.foot-left .set{
+    color: white;
+    /* display: flex; */
+}
+.set h3{
+    font-size: 30px;
+}
+.vv{
+    display: flex;
+    font-size: 12px;
+    margin: auto;
+    justify-content: center;
+    gap: 5px;
+}
+.foot-left button{
+    padding: 20px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}

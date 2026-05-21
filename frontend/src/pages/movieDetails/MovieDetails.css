@@ -1,0 +1,194 @@
+/* ===== الإعدادات الأساسية ===== */
+.movie-details-page {
+    background-color: #0f0f0f;
+    color: white;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    margin: 0;
+}
+
+/* ===== النافبار ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0f0f0f;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: white; }
+
+/* ===== هيرو الفيلم (هنا كان الخطأ) ===== */
+.movie-hero {
+    position: relative; /* مهم جداً لتثبيت النصوص داخل الصورة */
+    height: 500px;
+    margin: 0 40px 40px 40px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* يمنع أي شيء من الخروج عن حواف الصورة */
+}
+
+/* التدرج اللوني الأسود فوق الصورة */
+.movie-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(15,15,15,1) 0%, rgba(15,15,15,0) 100%);
+    z-index: 1;
+}
+
+.movie-hero-content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    z-index: 2; /* لجعل النصوص فوق التدرج الأسود */
+}
+
+/* ===== تنسيق النصوص والأزرار ===== */
+.tag {
+    display: inline-block;
+    background-color: rgba(242, 13, 51, 0.15);
+    color: #f20d33;
+    border: 1px solid rgba(242, 13, 51, 0.3);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.movie-hero h1 {
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0 0 16px 0;
+}
+
+.movie-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pg-badge {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* ===== المحتوى الرئيسي ===== */
+.main-content {
+    display: flex;
+    gap: 40px;
+    padding: 0 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.left-col { flex: 1; }
+.right-col { width: 340px; flex-shrink: 0; }
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #333;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #222;
+    margin-bottom: 24px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    color: #777;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 0 12px 0;
+    cursor: pointer;
+}
+
+.tab.active { color: white; border-bottom: 2px solid #f20d33; }
+
+.movie-desc { color: #aaa; line-height: 1.8; font-size: 15px; }
+
+/* ===== بطاقة الحجز ===== */
+.booking-card {
+    background-color: #141414;
+    border: 1px solid #222;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.booking-card label { display: block; font-size: 12px; color: #888; margin-bottom: 8px; }
+
+.booking-card select, .booking-card input {
+    width: 100%;
+    padding: 12px;
+    background-color: #0a0a0a;
+    border: 1px solid #222;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #f20d33;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}

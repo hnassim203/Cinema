@@ -1,0 +1,48 @@
+
+:root{
+  --bg: transparent;
+  --card: #fdf9f9;
+  --accent: #000000;
+  --muted: #999;
+}
+
+.dash-users { padding: 20px;
+     color: #000000;
+      font-family: Arial, Helvetica, sans-serif; }
+
+.dash-users .loading { 
+    color: #fff;
+     text-align: center;
+    padding: 50px; }
+
+.dash-users h2 { 
+    border-bottom: 2px solid var(--accent); 
+    padding-bottom: 10px; 
+    display: inline-block; 
+    margin: 0 0 16px 0; 
+    color: #000000; }
+
+.dash-users table { width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    background-color: var(--card); 
+    border-radius: 6px; overflow: hidden; }
+
+.dash-users thead tr { border-bottom: 1px solid #333; text-align: left; }
+.dash-users th, .dash-users td { padding: 15px; }
+
+.dash-users tbody tr { border-bottom: 1px solid #2a2a2a; }
+
+.dash-users .name { font-weight: bold; color: #fff; }
+.dash-users .email { color: var(--muted); }
+
+.role-badge { padding: 5px 10px; border-radius: 5px; font-size: 12px; font-weight: 700; display: inline-block; }
+.role-admin { background: rgba(242,13,51,0.12); color: var(--accent); }
+.role-user { background: rgba(255,255,255,0.04); color: #ccc; }
+
+.action-btn { padding: 8px 12px; border: none; border-radius: 5px; cursor: pointer; font-weight: 700; color: #fff; }
+.action-admin { background: #444; }
+.action-make { background: #28a745; }
+
+.action-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+

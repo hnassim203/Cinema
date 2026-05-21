@@ -1,0 +1,83 @@
+.salle-manager {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.salle-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.salle-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.salle-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.seat-actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-vip { background-color: #f1c40f; color: black !important; }
+.btn-space { background-color: #95a5a6; }
+.btn-disabled { background-color: #e74c3c; }
+.btn-regular { background-color: #3498db; }
+
+.seat-box {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  user-select: none;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.seat-box.selected {
+  border: 3px solid #000;
+  transform: scale(1.1);
+}
+
+.seat-box.regular {
+  background-color: #3498db; 
+  color: white;
+}
+
+.seat-box.vip {
+  background-color: #f1c40f; 
+  color: black;
+}
+
+.seat-box.disabled {
+  background-color: #e74c3c; 
+  color: white;
+  text-decoration: line-through;
+}
+
+.seat-box.space {
+  background-color: transparent; 
+  border: 1px dashed #ccc;
+  color: transparent;
+}

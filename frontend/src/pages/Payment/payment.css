@@ -1,0 +1,129 @@
+.payment-page {
+    background-color: #000;
+    color: white;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.page-content-pay {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 28px;
+}
+
+.payment-form-side { 
+    flex: 1; 
+}
+
+.payment-form-side h1 { 
+    font-size: 26px; 
+    font-weight: bold; 
+    margin-bottom: 6px; 
+}
+
+.payment-form-side .sub { 
+    color: #777; 
+    font-size: 14px; 
+    margin-bottom: 30px; 
+}
+
+/* تنسيقات حقول الإدخال */
+.form-group-pay {
+    margin-bottom: 15px;
+}
+
+.form-group-pay label { 
+    display: block; 
+    font-size: 13px; 
+    color: #aaa; 
+    margin-bottom: 5px; 
+}
+
+.form-group-pay input { 
+    width: 100%; 
+    padding: 12px; 
+    background: #1a1a1a; 
+    border: 1px solid #2a2a2a; 
+    color: white; 
+    border-radius: 8px; 
+}
+
+.two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* عمود ملخص الفاتورة */
+.order-summary-side { 
+    width: 280px; 
+    flex-shrink: 0; 
+}
+
+.order-box {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 22px;
+    position: sticky;
+    top: 90px;
+}
+
+.order-box h3 { 
+    font-size: 15px; 
+    font-weight: bold; 
+    margin-bottom: 18px; 
+}
+
+.order-row { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 13px; 
+    color: #aaa; 
+    margin-bottom: 10px; 
+}
+
+.order-total {
+    border-top: 1px solid #2a2a2a;
+    padding-top: 14px;
+    margin-top: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #f20d33;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pay-btn:hover { 
+    background-color: #c8001d; 
+}
+
+.secure-note { 
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 12px; 
+    color: #555; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 5px; 
+}

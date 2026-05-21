@@ -1,0 +1,90 @@
+.dashboard-page {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dashboard-page h1, 
+.dashboard-page h2 {
+  margin-bottom: 20px;
+}
+
+.dashboard-page form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.dashboard-page form br {
+  display: none;
+}
+
+.dashboard-page label {
+  font-weight: bold;
+}
+
+.dashboard-page input {
+  padding: 4px 6px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.duration-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-add {
+  background-color: #f00e23;
+  color: #ffffff;
+  border: 1px solid #000000;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+.dashboard-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-page th, 
+.dashboard-page td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: center;
+}
+
+.dashboard-page th {
+  font-weight: bold;
+}
+
+.desc-cell {
+  max-width: 250px;
+}
+
+.btn-delete {
+  background-color: #ffffff;
+  color: #ff0000;
+  border: 1px solid #000000;
+  padding: 2px 8px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.btn-featured {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.btn-featured.active {
+  color: #008000;
+  font-weight: bold;
+}

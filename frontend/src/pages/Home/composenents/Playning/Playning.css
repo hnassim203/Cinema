@@ -1,0 +1,60 @@
+.playning {
+  background-color: black;
+  padding-bottom: 40px;
+}
+
+.playning h1 {
+  color: white;
+  padding: 50px 0px 30px 58px;
+  font-weight: bold;
+  font-size: 49px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  padding: 20px 50px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 250px;
+  max-width: 250px;
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 1px solid red;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card h4 {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.card h4:hover {
+  color: red;
+}
+
+.card p {
+  color: #ccc;
+  padding: 0 10px 10px;
+}
+

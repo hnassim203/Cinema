@@ -1,0 +1,95 @@
+.confirm-page {
+    background-color: #121212;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirm-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.confirm-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* تصميم التذكرة / الملخص */
+.ticket-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.ticket-card h3 {
+    text-align: center;
+    color: #e50914;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.ticket-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.ticket-row span {
+    color: #888;
+}
+
+.ticket-row strong {
+    color: #fff;
+}
+
+.divider {
+    border: none;
+    border-top: 1px dashed #555;
+    margin: 25px 0;
+}
+
+.total-row {
+    font-size: 20px;
+    color: #e50914;
+}
+
+.total-row strong {
+    color: #4caf50;
+}
+
+/* زر العودة للرئيسية */
+.home-btn {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+    background-color: #b80710;
+}
