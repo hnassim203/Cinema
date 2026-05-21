@@ -19,7 +19,6 @@ class AuthController extends Controller
             'name'=>$request->name,
             'email'=>$request->email,
             'password'=>bcrypt($request->password),
-            'terms_accepted' => $request->terms_accepted ?? false
         ]);
          return response()->json([
             'message' => 'User created successfully',
