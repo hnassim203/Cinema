@@ -38,10 +38,7 @@ const handleSubmit = async (e) => {
     return;
   }
 
-  if (!accepted) {
-    alert("You must accept the terms");
-    return;
-  }
+
 
   try {
     const res = await fetch("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/register", {
@@ -52,9 +49,8 @@ const handleSubmit = async (e) => {
       body: JSON.stringify({
         name: formData.name,
         email: formData.email,
-        password: formData.password,
-        terms_accepted: accepted
-      })
+        password: formData.password
+            })
     });
 
     const data = await res.json();
@@ -84,7 +80,7 @@ navigate('/');
       <div className="left">
 
           <div className="overlay">
-          <h1> Cinema Abineda</h1>
+          <h1> Cinema </h1>
           <h2>Start Your Journey.</h2>
           <p>Step into the Shadows of Cinema. Where every seat has a story, and every scream is real.
              Book your nightmare now. </p>
