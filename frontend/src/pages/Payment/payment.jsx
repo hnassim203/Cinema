@@ -48,7 +48,7 @@ const handlePaymentSubmit = async (e) => {
         try {
     const user = JSON.parse(localStorage.getItem('user')); 
 
-    const response = await axios.post("http://127.0.0.1:8000/api/reservations", {
+    const response = await axios.post("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/reservations", {
         user_id: user?.id,
         screening_id: screeningId,
         seats: selectedSeats.map(s => s.id), 

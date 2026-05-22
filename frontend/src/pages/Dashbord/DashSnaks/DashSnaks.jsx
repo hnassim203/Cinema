@@ -17,7 +17,7 @@ export default function DashSnaks() {
 
   const fetchSnacks = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:8000/api/snacks");
+      const res = await axios.get("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/snacks");
       setSnacks(res.data);
     } catch (error) {
       console.error("error fetching foods", error);
@@ -37,7 +37,7 @@ export default function DashSnaks() {
     }
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/api/snacks", formData, {
+      const res = await axios.post("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/snacks", formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       alert(res.data.message);
@@ -52,7 +52,7 @@ export default function DashSnaks() {
   const handleDelete = async (id) => {
     if (window.confirm("sure ?")) {
       try {
-        await axios.delete(`http://127.0.0.1:8000/api/snacks/${id}`);
+        await axios.delete(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/snacks/${id}`);
         fetchSnacks();
       } catch (error) {
         console.error("delete error", error);
@@ -120,7 +120,7 @@ export default function DashSnaks() {
             <tr key={snack.id}>
               <td>
                 {snack.image ? (
-                   <img src={`http://127.0.0.1:8000/storage/${snack.image}`} alt={snack.name} width="50" height="50" style={{ objectFit: 'cover', borderRadius: '5px' }} />
+                   <img src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${snack.image}`} alt={snack.name} width="50" height="50" style={{ objectFit: 'cover', borderRadius: '5px' }} />
                 ) : (
                   "there is no image"
                 )}

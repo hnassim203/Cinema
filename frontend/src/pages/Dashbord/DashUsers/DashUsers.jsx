@@ -12,7 +12,7 @@ export default function DashUsers() {
 
     const fetchUsers = async () => {
         try {
-            const res = await axios.get('http://127.0.0.1:8000/api/users');
+            const res = await axios.get('https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/users');
             setUsers(res.data);
             setLoading(false);
         } catch (error) {
@@ -26,7 +26,7 @@ export default function DashUsers() {
         
   
         try {
-            await axios.put(`http://127.0.0.1:8000/api/users/${userId}/role`, { role: newRole });
+            await axios.put(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/users/${userId}/role`, { role: newRole });
             setUsers(users.map(user => user.id === userId ? { ...user, role: newRole } : user));
             alert('succ');
         } catch (error) {

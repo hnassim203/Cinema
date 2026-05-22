@@ -44,7 +44,7 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/api/register", {
+    const res = await fetch("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

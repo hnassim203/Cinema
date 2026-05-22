@@ -19,7 +19,7 @@ console.log('screenid kkk',screeningId)
     useEffect(() => {
         const fetchSnacksData = async () => {
             try {
-                const res = await axios.get("http://127.0.0.1:8000/api/snacks");
+                const res = await axios.get("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/snacks");
                 setSnacks(res.data);
                 setLoading(false);
             } catch (error) {
@@ -32,7 +32,7 @@ console.log('screenid kkk',screeningId)
 
     const renderProductImage = (snack) => {
         if (snack.image) {
-            return <img src={`http://127.0.0.1:8000/storage/${snack.image}`} alt={snack.name} width="80" height="80" style={{ objectFit: 'cover', borderRadius: '10px', marginBottom: '10px' }} />;
+            return <img src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${snack.image}`} alt={snack.name} width="80" height="80" style={{ objectFit: 'cover', borderRadius: '10px', marginBottom: '10px' }} />;
         }
         if (snack.category === 'popcorn') return <div className="product-emoji">🍿</div>;
         if (snack.category === 'drinks') return <div className="product-emoji">🥤</div>;

@@ -23,7 +23,7 @@ export default function MovieDetails() {
         if (film) {
             const fetchScreenings = async () => {
                 try {
-                    const res = await axios.get(`http://127.0.0.1:8000/api/films/${film.id}/screenings`);
+                    const res = await axios.get(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/films/${film.id}/screenings`);
                     const data = res.data;
                     setScreenings(data);                    
                     const dates = [...new Set(data.map(item => item.date))];
@@ -45,7 +45,7 @@ export default function MovieDetails() {
         );
     }
 
-    const imageUrl = `http://127.0.0.1:8000/storage/${film.image}`;
+    const imageUrl = `https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${film.image}`;
 
     const availableTimes = screenings.filter(s => s.date === selectedDate);
 

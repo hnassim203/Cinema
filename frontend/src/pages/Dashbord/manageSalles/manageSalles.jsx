@@ -21,7 +21,7 @@ const ManageSalles = () => {
 
   const fetchSalles = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/salles');
+      const response = await axios.get('https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/salles');
       setAllSalles(response.data);
     } catch (error) {
       console.error('error', error);
@@ -31,7 +31,7 @@ const ManageSalles = () => {
   const handleCreateSalle = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/salles', formData);
+      const response = await axios.post('https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/salles', formData);
       setCurrentSalle(response.data.salle);
       setSeats(response.data.salle.seats);
       setSelectedSeats([]);
@@ -71,7 +71,7 @@ const ManageSalles = () => {
     }
 
     try {
-      await axios.post('http://localhost:8000/api/seats/bulk-update', {
+      await axios.post('https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/seats/bulk-update', {
         seat_ids: selectedSeats,
         type: newType
       });

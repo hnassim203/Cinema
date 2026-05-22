@@ -28,7 +28,7 @@ export default function Home() {
 
   const getFilms = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/film");
+      const res = await fetch("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/film");
       const data = await res.json();
       setFilms(data);
     } catch (error) {
@@ -108,7 +108,7 @@ export default function Home() {
                   onClick={() => navigate(`/view/${film.id}`, { state: { film: film } })}
               >
                   <img
-                  src={`http://127.0.0.1:8000/storage/${film.image}`}
+                  src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${film.image}`}
                   alt={film.title}
                   />
                   <h4>{film.title}</h4>
@@ -117,7 +117,7 @@ export default function Home() {
               ))
           ) : (
               <div style={{ color: 'white', padding: '20px', fontSize: '18px' }}>
-                 No movies found for "{searchMovie}" 😢
+                 No movies found for "{searchMovie}" 
               </div>
           )}
         </div>

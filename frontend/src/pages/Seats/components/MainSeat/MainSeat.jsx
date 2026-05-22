@@ -22,7 +22,7 @@ export default function MainSeat() {
   useEffect(() => {
     const fetchSeatMap = async () => {
       try {
-        const res = await axios.get(`http://127.0.0.1:8000/api/screenings/${screeningId}/seats`);
+        const res = await axios.get(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/screenings/${screeningId}/seats`);
         setScreeningData(res.data.screening);
         setSalleSeats(res.data.seats);
         setLoading(false);
@@ -40,7 +40,7 @@ export default function MainSeat() {
   useEffect(() => {
     const fetchReservedSeats = async () => {
       try {
-        const res = await axios.get(`http://127.0.0.1:8000/api/reservations/seats/${screeningId}`);
+        const res = await axios.get(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/reservations/seats/${screeningId}`);
         setReservedSeatsDB(res.data); 
       } catch (error) {
         console.error("خطأ في جلب المقاعد المحجوزة:", error);

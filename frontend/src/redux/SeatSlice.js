@@ -28,10 +28,10 @@ const seatSlice = createSlice({
       }
     },
 
-    // تفعيل وتحديث الدالة هنا لتصفير المقاعد بعد الدفع
+    
     clearFilmSeats: (state, action) => {
       const filmId = action.payload; 
-      state.reservations[filmId] = []; // تم تعيينها كمصفوفة فارغة لتجنب أخطاء الـ undefined
+      state.reservations[filmId] = []; 
     },
   },
 });
@@ -39,7 +39,6 @@ const seatSlice = createSlice({
 export const { toggleSeat, clearFilmSeats } = seatSlice.actions;
 export default seatSlice.reducer;
 
-// إعداد الـ Store الخاص بك في أسفل الملف بشكل نظيف
 import { configureStore } from "@reduxjs/toolkit";
 
 export const store = configureStore({

@@ -11,7 +11,7 @@ export default function Playning() {
 
     try {
 
-      const res = await fetch("http://127.0.0.1:8000/api/film");
+      const res = await fetch("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/film");
 
       const data = await res.json();
 
@@ -48,7 +48,7 @@ export default function Playning() {
           >
 
             <img
-              src={`http://127.0.0.1:8000/storage/${film.image}`}
+              src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${film.image}`}
               alt={film.title}
             />
 

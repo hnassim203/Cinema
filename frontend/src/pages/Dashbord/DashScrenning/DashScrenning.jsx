@@ -19,13 +19,13 @@ export default function DashScreenings() {
 
   const fetchData = async () => {
     try {
-      const filmsRes = await axios.get("http://127.0.0.1:8000/api/film");
+      const filmsRes = await axios.get("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/film");
       setFilms(Array.isArray(filmsRes.data) ? filmsRes.data : filmsRes.data.film || []);
 
-      const sallesRes = await axios.get("http://127.0.0.1:8000/api/salles");
+      const sallesRes = await axios.get("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/salles");
       setSalles(sallesRes.data);
 
-      const screeningsRes = await axios.get("http://127.0.0.1:8000/api/screenings");
+      const screeningsRes = await axios.get("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/screenings");
       setScreenings(screeningsRes.data);
     } catch (error) {
       console.error("error fetching", error);
@@ -41,7 +41,7 @@ export default function DashScreenings() {
     }
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/api/screenings", form);
+      const res = await axios.post("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/screenings", form);
       
       alert(res.data.message || "added succ");
       
@@ -114,7 +114,7 @@ export default function DashScreenings() {
               <td>
                 {screening.film && screening.film.image && (
                   <img 
-                    src={`http://127.0.0.1:8000/storage/${screening.film.image}`} 
+                    src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${screening.film.image}`} 
                     alt="poster" 
                     width="50" 
                     height="70" 

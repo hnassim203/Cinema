@@ -12,7 +12,7 @@ export default function Hero() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/api/movies/featured')
+    axios.get('https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/movies/featured')
       .then(res => {
         setMainMovie(res.data);
         setLoading(false);
@@ -30,7 +30,7 @@ export default function Hero() {
     <div>
       <div className='hero'>
         <img 
-          src={`http://127.0.0.1:8000/storage/${MainMovie.image}`} 
+          src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${MainMovie.image}`} 
           alt={MainMovie.title} 
         />
       </div>

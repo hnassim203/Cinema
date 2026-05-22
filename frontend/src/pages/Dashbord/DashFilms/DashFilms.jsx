@@ -11,7 +11,7 @@ export default function Dashbord() {
   });
 const handleSetFeatured = async (filmId) => {
     try {
-        const res = await axios.put(`http://127.0.0.1:8000/api/movies/${filmId}/featured`);
+        const res = await axios.put(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/movies/${filmId}/featured`);
         alert(res.data.message);
 getFilms();
     } catch (error) {
@@ -20,7 +20,7 @@ getFilms();
 };
   const getFilms = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/film");
+      const res = await fetch("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/film");
       const data = await res.json();
 
       setFilms(Array.isArray(data) ? data : data.film);
@@ -39,7 +39,7 @@ getFilms();
     if (!window.confirm("Are you sure you want to delete this film?")) return;
 
     try {
-      const res = await fetch(`http://127.0.0.1:8000/api/film/${id}`, {
+      const res = await fetch(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/film/${id}`, {
         method: "DELETE",
       });
 
@@ -85,7 +85,7 @@ getFilms();
 
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/film", {
+      const res = await fetch("https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/film", {
         method: "POST",
         body: data,
       });
@@ -192,7 +192,7 @@ return (
           <tr key={film.id}>
             <td>
               <img
-                src={`http://127.0.0.1:8000/storage/${film.image}`}
+                src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${film.image}`}
                 width="80"
                 height="60"
                 alt="poster"

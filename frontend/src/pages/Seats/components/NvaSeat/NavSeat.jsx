@@ -14,7 +14,7 @@ export default function NavSeat() {
   useEffect(() => {
     const fetchScreeningInfo = async () => {
       try {
-        const res = await axios.get(`http://127.0.0.1:8000/api/screenings/${screeningId}/seats`);
+        const res = await axios.get(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/screenings/${screeningId}/seats`);
         setScreeningData(res.data.screening);
       } catch (error) {
         console.error("error get film in movie details nav", error);
@@ -42,7 +42,7 @@ export default function NavSeat() {
 
         <div className="seat_navimg">
           <img
-            src={`http://127.0.0.1:8000/storage/${screeningData.film.image}`}
+            src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${screeningData.film.image}`}
             alt={screeningData.film.title}
           />
 

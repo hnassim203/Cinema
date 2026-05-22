@@ -23,7 +23,7 @@ export default function Profile() {
 
         const fetchUserReservations = async () => {
             try {
-                const res = await axios.get(`http://127.0.0.1:8000/api/users/${currentUser.id}/reservations`);
+                const res = await axios.get(`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/api/users/${currentUser.id}/reservations`);
                 setReservations(res.data);
                 setLoading(false);
             } catch (error) {
@@ -69,7 +69,7 @@ export default function Profile() {
                                 
                                 <div style={{ width: '150px', flexShrink: 0 }}>
                                     <img 
-                                        src={`http://127.0.0.1:8000/storage/${res.screening?.film?.image}`} 
+                                        src={`https://cinema-wan-htf0bcg0end6fhfv.spaincentral-01.azurewebsites.net/storage/${res.screening?.film?.image}`} 
                                         alt="Movie" 
                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                         onError={(e) => { e.target.src = 'https://via.placeholder.com/150x220?text=No+Image'; }} 
