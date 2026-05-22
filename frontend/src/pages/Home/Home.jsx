@@ -49,7 +49,7 @@ export default function Home() {
       
       <nav>
         <div className="nav-left">
-            <h1>Cinema Abineda</h1>
+            <h1>Cinema</h1>
             <ul>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/#now-playing'>Movies</Link></li>

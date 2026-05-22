@@ -56,10 +56,8 @@ const handlePaymentSubmit = async (e) => {
         total_price: grandTotal
     });
 
-    // مسح المقاعد من Redux بعد نجاح الحجز
     dispatch(clearFilmSeats(screeningId));
 
-    // 🚀 التعديل هنا: التوجيه لصفحة التأكيد مع إرسال البيانات
     navigate('/confirm', { 
         state: { 
             reservationId: response.data.reservation_id, 

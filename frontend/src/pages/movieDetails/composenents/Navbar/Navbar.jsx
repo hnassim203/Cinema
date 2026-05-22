@@ -10,7 +10,7 @@ export default function Navbar() {
     <div>
       <nav>
         <div className="nav-left">
-            <h1>Cinema Abineda</h1>
+            <h1>Cinema</h1>
             <ul>
                 <li><Link smooth to='/#now-playing'>Movies</Link></li>
                 <li><a href="/cinemas">Cinemas</a></li>

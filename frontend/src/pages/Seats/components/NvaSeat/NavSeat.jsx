@@ -38,7 +38,7 @@ export default function NavSeat() {
     <div className="nav_seat">
 
       <div className="nav_seat_left">
-        <h1>Cinema Abineda</h1>
+        <h1>Cinema </h1>
 
         <div className="seat_navimg">
           <img

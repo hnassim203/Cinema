@@ -67,7 +67,7 @@ export default function Login() {
           <div className="left">
     
               <div className="overlay">
-              <h1> Cinema Abineda</h1>
+              <h1> Cinema</h1>
               <h2>Start Your Journey.</h2>
               <p>Step into the Shadows of Cinema. Where every seat has a story, and every scream is real.
                  Book your nightmare now. </p>

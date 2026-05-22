@@ -73,7 +73,7 @@ navigate('/');
 
   } catch (error) {
     console.log(error);
-    alert("Email dija kayn");
+    alert("Email already exist");
   }
 };
 
