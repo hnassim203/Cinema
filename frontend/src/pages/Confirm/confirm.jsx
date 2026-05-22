@@ -2,8 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../movieDetails/composenents/Navbar/Navbar';
 import Footer from "../../components/Footer/Footer"
-import './Confirm.css';
-
+import "./confirm.css";
 export default function Confirm() {
     const location = useLocation();
     const navigate = useNavigate();

@@ -3,7 +3,7 @@ import './MainSeat.css';
 import EcranImg from '../../../../assets/images/ecran1.png';
 import { MdEventSeat } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleSeat } from '../../../../redux/seatSlice';
+import { toggleSeat } from "../../../../redux/SeatSlice";
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 

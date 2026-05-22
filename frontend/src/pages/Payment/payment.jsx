@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
-import { clearFilmSeats } from '../../redux/seatSlice'; 
 import Navbar from '../Home/composenents/Navbar/Navbar'; 
 import Footer from '../../components/Footer/Footer'; 
-import './Payment.css';
-
+import { clearFilmSeats } from '../../redux/SeatSlice'; 
+import "./payment.css";
 export default function Payment() {
     const location = useLocation();
     const navigate = useNavigate();
