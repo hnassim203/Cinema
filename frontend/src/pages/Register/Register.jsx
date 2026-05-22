@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   if (!formData.name || !formData.email || !formData.password || !formData.confirm_password) {
-    alert('3mer kolxi');
+    alert('fill fields');
     return;
   }
 

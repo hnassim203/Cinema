@@ -22,7 +22,7 @@ export default function Login() {
   e.preventDefault();
 
   if (!formData.email || !formData.password) {
-    alert('3mer kolxi');
+    alert('fill fields');
     return;
   }
 
