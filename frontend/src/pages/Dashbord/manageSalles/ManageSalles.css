@@ -81,3 +81,34 @@
   border: 1px dashed #ccc;
   color: transparent;
 }
+@media (max-width: 768px) {
+  .salle-manager {
+    padding: 15px;
+  }
+  
+  .salle-form {
+    flex-direction: column;
+  }
+  
+  .salle-form input, 
+  .salle-form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .seat-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .seat-actions button {
+    flex: 1 1 45%;
+    font-size: 13px;
+    box-sizing: border-box;
+  }
+
+  .seat-box {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

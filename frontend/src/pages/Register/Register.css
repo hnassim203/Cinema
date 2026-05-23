@@ -127,4 +127,41 @@ position: absolute;
 .form-group span:hover {
   color: red;
 }
+@media (max-width: 768px) {
+  .Register-page {
+    flex-direction: column;
+  }
 
+  .left {
+    width: 100%;
+    min-height: 35vh;
+  }
+
+  .overlay h1 {
+    margin: 20px 15px;
+    font-size: 20px;
+  }
+
+  .overlay h2 {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    font-size: 30px;
+  }
+
+  .overlay p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .right {
+    width: 100%;
+    min-height: 65vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .form-group input {
+    box-sizing: border-box;
+  }
+}

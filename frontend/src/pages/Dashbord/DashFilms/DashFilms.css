@@ -88,3 +88,48 @@
   color: #008000;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .dashboard-page {
+    padding: 15px 10px;
+  }
+
+  .dashboard-page form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .duration-inputs {
+    flex-direction: column;
+  }
+
+  .dashboard-page input, 
+  .btn-add {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+
+  .dashboard-page table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .dashboard-page th, 
+  .dashboard-page td {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .desc-cell {
+    max-width: 150px;
+    white-space: normal;
+  }
+  
+  .btn-delete, 
+  .btn-featured {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

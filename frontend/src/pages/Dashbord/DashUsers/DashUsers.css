@@ -46,3 +46,29 @@
 
 .action-btn:disabled { opacity: 0.6; cursor: not-allowed; }
 
+@media (max-width: 768px) {
+  .dash-users {
+    padding: 15px 10px;
+  }
+  
+  .dash-users h2 {
+    font-size: 22px;
+  }
+  
+  .dash-users table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .dash-users th, 
+  .dash-users td {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .action-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}

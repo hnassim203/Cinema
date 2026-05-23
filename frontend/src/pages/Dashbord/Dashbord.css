@@ -45,3 +45,25 @@
   color: #ffffff;
   border-color: #f00e23;
 }
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 30px 15px;
+  }
+  
+  .dashboard-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  
+  .dashboard-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .dash-card {
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+}

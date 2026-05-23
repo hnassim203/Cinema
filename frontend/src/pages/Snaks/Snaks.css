@@ -150,3 +150,30 @@
     color: #999;
     cursor: not-allowed;
 }
+@media (max-width: 768px) {
+  .page-content {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .filters {
+    justify-content: center;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .cart-side {
+    width: 100%;
+  }
+
+  .cart-box {
+    position: static;
+  }
+}

@@ -7,3 +7,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-top: 1px solid #333; 
 }
+@media (max-width: 768px) {
+  .footer_container {
+    padding: 15px;
+    font-size: 12px;
+  }
+}

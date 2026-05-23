@@ -85,3 +85,20 @@
 .seat-label {
     margin-top: 2px;
 }
+@media (max-width: 768px) {
+  .ecron {
+    padding-top: 140px;
+  }
+  .seat-grid {
+    gap: 5px;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  .seat {
+    min-width: 28px;
+    min-height: 35px;
+  }
+  .seat-label {
+    font-size: 11px;
+  }
+}

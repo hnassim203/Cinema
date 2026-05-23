@@ -77,3 +77,34 @@ nav{
     border: 0.5px solid white;
 }
 
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 15px;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    position: relative;
+  }
+  .nav-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-left ul {
+    margin-left: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-right {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .search-box input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

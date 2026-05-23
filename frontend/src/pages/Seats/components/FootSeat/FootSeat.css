@@ -88,3 +88,24 @@ gap: 8px;
     font-size: 15px;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+  .foot {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+  .foot-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .foot-left {
+    gap: 15px;
+  }
+  .foot-left button {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+  .set h3 {
+    font-size: 22px;
+  }
+}

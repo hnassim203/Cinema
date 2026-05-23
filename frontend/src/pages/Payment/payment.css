@@ -29,7 +29,6 @@
     margin-bottom: 30px; 
 }
 
-/* تنسيقات حقول الإدخال */
 .form-group-pay {
     margin-bottom: 15px;
 }
@@ -56,7 +55,6 @@
     gap: 14px;
 }
 
-/* عمود ملخص الفاتورة */
 .order-summary-side { 
     width: 280px; 
     flex-shrink: 0; 
@@ -126,4 +124,26 @@
     align-items: center; 
     justify-content: center; 
     gap: 5px; 
+}
+@media (max-width: 768px) {
+  .page-content-pay {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .two-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary-side {
+    width: 100%;
+  }
+
+  .order-box {
+    position: static;
+  }
+
+  .form-group-pay input {
+    box-sizing: border-box;
+  }
 }
