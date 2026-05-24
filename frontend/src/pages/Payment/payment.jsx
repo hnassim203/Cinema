@@ -28,8 +28,8 @@ export default function Payment() {
 
     const snacksTotal = snacksCart.reduce((total, item) => total + (Number(item.price) * item.quantity), 0);
     
-    const bookingFee = 1.50; 
-    const grandTotal = seatsTotal + snacksTotal + bookingFee;
+    // const bookingFee = 1.50; 
+    const grandTotal = seatsTotal + snacksTotal ;
 
 const handlePaymentSubmit = async (e) => {
         e.preventDefault();
@@ -141,10 +141,10 @@ const handlePaymentSubmit = async (e) => {
                             </div>
                         )}
 
-                        <div className="order-row">
+                        {/* <div className="order-row">
                             <span>Booking Fee</span>
                             <span>${bookingFee.toFixed(2)}</span>
-                        </div>
+                        </div> */}
 
                         <div className="order-total">
                             <span>Total</span>
