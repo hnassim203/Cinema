@@ -13,6 +13,7 @@ export default function Dashbord() {
         <Link to="/dashbord/salles" className="dash-card"> Salles</Link>
         <Link to="/dashbord/snaks" className="dash-card"> Snacks</Link>
         <Link to="/dashbord/users" className="dash-card"> Users</Link>
+        <Link to="/" className="dash-card"> Home</Link>
         {/* <Link to="/dashbord/seats" className="dash-card"> seats</Link> */}
       </div>
     </div>
