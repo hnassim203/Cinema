@@ -13,8 +13,6 @@ export default function Navbar() {
             <h1>Cinema</h1>
             <ul>
                 <li><Link smooth to='/#now-playing'>Movies</Link></li>
-                <li><a href="/cinemas">Cinemas</a></li>
-                <li><a href="/pricing">Pricing</a></li>
             </ul>
         </div>
 
