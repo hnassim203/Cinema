@@ -95,7 +95,7 @@ const handlePaymentSubmit = async (e) => {
                         <label>Card Holder Name</label>
                         <input 
                             type="text" 
-                            placeholder="rifi l9awad"
+                            placeholder="enter your name"
                             value={cardInfo.name}
                             onChange={(e) => setCardInfo({ ...cardInfo, name: e.target.value })}
                         />

@@ -114,16 +114,18 @@ const ManageSalles = () => {
           onChange={(e) => setFormData({...formData, name: e.target.value})}
           required 
         />
+        <label>rows number</label>
         <input 
           type="number" 
           placeholder="rows number" 
           value={formData.rows_count}
           onChange={(e) => setFormData({...formData, rows_count: e.target.value})}
           required 
-        />
+          />
+          <label>columns number</label>
         <input 
           type="number" 
-          placeholder="column number" 
+          placeholder="columns number" 
           value={formData.columns_count}
           onChange={(e) => setFormData({...formData, columns_count: e.target.value})}
           required 

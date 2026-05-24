@@ -69,7 +69,7 @@ getFilms();
       !form.min ||
       !form.category 
     ) {
-      alert('3mr kolxu');
+      alert('fill fields');
       return;
     }
 
